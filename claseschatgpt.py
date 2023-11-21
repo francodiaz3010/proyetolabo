@@ -31,22 +31,4 @@ class MatrizViajes:
             for viaje in viajes:
                 print(f"  Fecha: {viaje.fecha}, Hora: {viaje.hora}, Pasajero: {viaje.pasajero.nombre}")
 
-# Ejemplo de uso:
 
-destino1 = Destino("Ciudad A")
-destino2 = Destino("Ciudad B")
-
-pasajero1 = Pasajero("Juan", "Pérez", "12345678")
-pasajero2 = Pasajero("Ana", "Gomez", "98765432")
-
-viaje1 = Viaje("2023-11-20", "10:00", pasajero1, destino1)
-viaje2 = Viaje("2023-11-25", "15:30", pasajero2, destino2)
-viaje3 = Viaje("2023-12-01", "08:45", pasajero1, destino1)
-
-matriz_viajes = MatrizViajes()
-matriz_viajes.agregar_viaje(viaje1)
-matriz_viajes.agregar_viaje(viaje2)
-matriz_viajes.agregar_viaje(viaje3)
-
-# Imprimir la matriz organizada por destino
-matriz_viajes.imprimir_matriz()
